@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+</head>
+
+<body>
+    <h1>Mi perfil</h1>
+    <div>
+        <form method="POST" target="_self">
+            <fieldset>
+                <legend>Editar datos personales</legend>
+                <label for="ESTUDIANTE">Ocupación</label>
+                <input type="text" id="ESTUDIANTE" value="ESTUDIANTE" readonly>
+                <label for="name">Nombre completo:</label>
+                <input type="text" name="name" id="name" placeholder="Nombre y Apellido" maxlength="30" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" placeholder="Edad" min="0" max="110" required>
+                <label for="nacionalidad">Nacionalidad:</label>
+                <select name="nacionalidad" id="nacionalidad">
+                    <option value="arg">Argentinx</option>
+                    <option value="bra">Brasileñx</option>
+                    <option value="col">Colombianx</option>
+                    <option value="per">Peruanx</option>
+                    <option value="chil">Chilenx</option>
+                    <option value="Mex">Mexicanx</option>
+                    <option value="other">Otrx</option>
+                </select>
+                <label for="condicionlaboral">Condición Laboral:</label>
+                <select name="condicionlaboral" id="condicionlaboral">
+                    <option value="des">Desempleado</option>
+                    <option value="busqueda" selected>En búsqueda laboral</option>
+                    <option value="partime">Trabajo part time</option>
+                    <option value="fulltime">Trabajo full time</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Gustos personales</legend>
+                <label for="musica">Cuál es el tipo de música que más te gusta:</label>
+                <input type="text" name="musica" id="musica" placeholder="Tu música preferida" maxlength="30" required>
+                <label for="comida">Cuál es tu comida preferida:</label>
+                <select name="comida" id="comida">
+                    <option value="carnes">Carnes rojas</option>
+                    <option value="vegetales" selected>Vegetales</option>
+                    <option value="pescado">Pescado</option>
+                    <option value="pastas">Pastas</option>
+                </select>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="checkbox" id="datos" name="datos">
+            <label for="datos"><i>Recordar los datos</i></label>
+        </form>
+    </div>
+</body>
+
+</html>
