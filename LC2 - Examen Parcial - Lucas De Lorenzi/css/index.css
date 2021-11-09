@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* MENU: NAVBAR/HEADER */
+
+header {
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header img {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  max-width: 250px;
+  padding: 15px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+      flex-wrap: wrap;
+}
+
+nav ul li {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  box-sizing: border-box;
+}
+
+nav ul li a {
+  color: rgb(140, 98, 57);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  width: 100%;
+  padding: 10px 0;
+  display: block;
+  border: 2px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+nav ul li a:hover {
+  border: 2px solid rgba(213, 151, 65, 0.3);
+  font-weight: bold;
+}
+
+/* SECTIONS & CONTAINERS */
+
+.container {
+  width: 50%;
+  padding: 60px 0px;
+}
+
+/* COFFEE SHOP */
+
+#section-main-image {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+}
+
+#section-main-image h1 {
+  color: rgba(255, 255, 255, .7);
+  margin: 0;
+  font-size: 100px;
+}
+
+/* SECTION COFFEE */
+
+#section-coffee {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#section-coffee h2 {
+  margin: 40px 0 20px 0;
+}
+
+#section-coffee p, h2, h3 {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product {
+  padding: 0 15px;
+}
+
+.product img {
+  width: 100%;
+}
+
+/* FOOTER CONTACT */
+
+#footer-contact {
+  background-color: #58462c;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+
+#footer-contact h2 {
+  text-align: left;
+}
+
+#footer-contact .contact-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info ul li {
+  padding: 5px;
+}
+
+.contact-form form {
+  margin-left: 50px;
+  text-align: right;
+}
+
+.contact-form form .form-control {
+  padding: 10px 0;
+}
+
+.contact-form form .form-control label {
+  margin-right: 15px;
+}
+
+.contact-form form input[type="submit"] {
+  margin-top: 15px;
+  color: #58462c;
+  padding: 2px 30px;
+}
